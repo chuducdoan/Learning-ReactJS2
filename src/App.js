@@ -1,10 +1,10 @@
 import './App.css';
-import BaiTapThucHanhLayout from './component/BaiTapThucHanhLayout/BaiTapThucHanhLayout';
+import DataBinding from './component/DataBinding/DataBinding';
 
 function App() {
   return (
     <div className="App">
-      <BaiTapThucHanhLayout/>
+      <DataBinding/>
     </div>
   );
 }
