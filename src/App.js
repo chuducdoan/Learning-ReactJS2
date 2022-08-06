@@ -1,10 +1,10 @@
 import './App.css';
-import BaiTapThuKinh from './BaiTapThuKinh/BaiTapThuKinh';
+import BaiTapChonXeNangCao from './BaiTapChonXeNangCao/BaiTapChonXeNangCao';
 
 function App() {
   return (
     <div className="App">
-      <BaiTapThuKinh/>
+      <BaiTapChonXeNangCao/>
     </div>
   );
 }
