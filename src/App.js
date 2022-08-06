@@ -1,10 +1,10 @@
 import './App.css';
-import DataBinding from './component/DataBinding/DataBinding';
+import BaiTapChonXe from './BaiTapChonXe/BaiTapChonXe';
 
 function App() {
   return (
     <div className="App">
-      <DataBinding/>
+      <BaiTapChonXe/>
     </div>
   );
 }
