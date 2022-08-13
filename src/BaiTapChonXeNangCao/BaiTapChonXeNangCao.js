@@ -19,6 +19,14 @@ class BaiTapChonXeNangCao extends Component {
         })
     }
 
+    componentDidMount = () => {
+        // Day la phuong thuc co san cua component, tu dong thuc thi sau khi render duoc goi
+        // Luu y componentDidMount chi chay mot lan dau tien sau  khi render
+        let tagScript = document.createElement('script');
+        tagScript.src = 'https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/3.0.3/js-cloudimage-360-view.min.js';
+        document.querySelector('#appendScript').appendChild(tagScript);
+    }
+
     renderWheels = () => {
         return dataWheels.map((item, index) => {
             return <div key={index} className="row border border-link py-2 mt-2" style={{cursor: 'pointer'}}>
@@ -48,8 +56,8 @@ class BaiTapChonXeNangCao extends Component {
                             data-amount-x="73"
                             ></div>
                         </div>
-                        <div className="appendScript">
-                            <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/3.0.3/js-cloudimage-360-view.min.js"></script>
+                        <div id="appendScript">
+                            
                         </div>
                         <table className="table border border-color-light">
                             <thead>
